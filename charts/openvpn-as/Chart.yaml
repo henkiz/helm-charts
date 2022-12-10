@@ -1,0 +1,15 @@
+---
+apiVersion: v2
+name: openvpn-as
+description: A Helm chart for Kubernetes
+type: application
+version: 0.0.1
+appVersion: version-2.9.0-5c5bd120-ubuntu18
+maintainers:
+  - email: brunowego@henkiz.com
+    name: Henkiz
+home: https://github.com/henkiz/helm-charts/tree/main/charts/openvpn-as
+sources:
+  - https://github.com/henkiz/helm-charts/tree/main/charts/openvpn-as
+  - https://github.com/linuxserver/docker-openvpn-as
+  - https://openvpn.net/vpn-server/
