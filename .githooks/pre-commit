@@ -8,4 +8,8 @@ helm-docs 2> /dev/null
 
 [[ $(git diff charts/*/README.md) ]] && (echo 'ERROR: Helm documentation updated!' && exit 1)
 
+echo '[pre-commit] Running chart testing...'
+
+ct lint --config ./.ct.yml > /dev/null
+
 exit 0
