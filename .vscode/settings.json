@@ -1,5 +1,8 @@
 {
   "files.associations": {
     "**/.bundle/config": "yaml"
+  },
+  "files.exclude": {
+    "**/.git": false
   }
 }
