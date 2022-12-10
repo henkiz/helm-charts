@@ -19,4 +19,4 @@ helm search repo henkiz
 
 ## License
 
-[Apache License](https://github.com/henkiz/helm-charts/blob/master/LICENSE.txt)
+[Apache License](https://github.com/henkiz/helm-charts/blob/main/LICENSE.txt)
