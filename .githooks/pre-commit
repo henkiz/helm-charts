@@ -12,4 +12,10 @@ echo '[pre-commit] Running chart testing...'
 
 ct lint --config ./.ct.yml > /dev/null
 
+echo '[pre-commit] Running Helm template...'
+
+for chart in ./charts/*; do
+  helm template "$chart" > /dev/null
+done
+
 exit 0
