@@ -1,0 +1,7 @@
+---
+owner: henkiz
+git-repo: helm-charts
+pages-branch: main
+release-name-template: '{{ .Name }}-chart-{{ .Version }}'
+skip-existing: true
+index-path: ./docs/index.yaml
