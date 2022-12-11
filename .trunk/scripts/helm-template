@@ -1,0 +1,7 @@
+#! /bin/bash
+
+set -eo pipefail
+
+for chart in ./charts/*; do
+  helm template "$chart" >/dev/null
+done

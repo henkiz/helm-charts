@@ -28,8 +28,33 @@ runtimes:
     - python@3.10.3
 
 actions:
+  definitions:
+    - id: helm-docs
+      display_name: Helm Docs
+      description: Generate Helm documentation
+      run: ./.trunk/scripts/helm-docs
+      triggers:
+        - git_hooks: [pre-commit]
+
+    - id: chart-test
+      display_name: Chart Test
+      description: Run chart test
+      run: ./.trunk/scripts/chart-test
+      triggers:
+        - git_hooks: [pre-commit]
+
+    - id: helm-template
+      display_name: Helm Template
+      description: Run Helm template
+      run: ./.trunk/scripts/helm-template
+      triggers:
+        - git_hooks: [pre-commit]
+
   enabled:
     - trunk-announce
     - trunk-check-pre-push
     - trunk-fmt-pre-commit
     - trunk-upgrade-available
+    - helm-docs
+    - chart-test
+    - helm-template
