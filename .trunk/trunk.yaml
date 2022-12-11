@@ -20,6 +20,11 @@ lint:
     - shellcheck@0.8.0
     - shfmt@3.5.0
     - yamllint@1.28.0
+  ignore:
+    - linters: [ALL]
+      paths:
+        - charts/*/templates/*
+        - charts/*/README.md
 
 runtimes:
   enabled:
