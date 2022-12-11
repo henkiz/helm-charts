@@ -2,7 +2,7 @@
 version: 2
 
 updates:
-- package-ecosystem: docker
-  directory: /charts/openvpn-as
-  schedule:
-    interval: daily
+  - package-ecosystem: docker
+    directory: /charts/openvpn-as
+    schedule:
+      interval: daily

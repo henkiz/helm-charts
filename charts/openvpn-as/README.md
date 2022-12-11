@@ -29,7 +29,7 @@ helm repo add henkiz https://henkiz.github.io/helm-charts
 helm install my-release --set 'service.type=LoadBalancer' henkiz/openvpn-as
 ```
 
-These commands deploy openvpn-as on the Kubernetes cluster in the default configuration. The [Parameters](#parameters) section lists the parameters that can be configured during installation.
+These commands deploy openvpn-as on the Kubernetes cluster in the default configuration. The [Parameters](./#parameters) section lists the parameters that can be configured during installation.
 
 > **Tip**: List all releases using `helm list`
 
