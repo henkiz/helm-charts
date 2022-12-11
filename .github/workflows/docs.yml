@@ -20,10 +20,13 @@ concurrency:
 
 jobs:
   build:
+    name: Build
     runs-on: ubuntu-22.04
     steps:
-      - name: Checkout
+      - name: Checkout Code
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
       - name: Setup Pages
         uses: actions/configure-pages@v2
@@ -34,10 +37,11 @@ jobs:
           source: ./docs
           destination: ./_site
 
-      - name: Upload artifact
+      - name: Upload Artifact
         uses: actions/upload-pages-artifact@v1
 
   deploy:
+    name: Deploy
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
